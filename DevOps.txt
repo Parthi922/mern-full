@@ -1,0 +1,273 @@
+DevOps--->> Development + Operation
+
+SDLC ---->> Software Development Lifecycle
+
+1.Requirement
+2.Analysis
+3.Design
+4.Developer (code build)
+5.Testing
+6.Verification & Release 
+
+three methodology--- is a rules and culture
+----------------------
+1.waterfall methodology
+2.Agile methodology
+3.DevOps methodology
+
+Culture
+------------
+waterfall methodology-->> Analysis-Design-Implemenlation-Testing-Maintenance this wave form
+----
+linearn sequence
+
+1. inflexinbility changes ---> Phase is complete 
+2.late Testing --------------->project high risk 
+3.customer involvement ----->user expectations
+4.delivery delay -------> 9months 
+---------------------------------------------------
+
+Agile methodology
+----------------------
+
+iterative and flexible apporach
+sprint meeting
+flexinbility --> made changes at any step
+customer --> throught process
+Early continous delivery ---> continuous delivery 
+team colloboration 
+improving quality ---> continuous testing
+---------------------------
+
+Agile disadvantages
+------------------------
+1. less predictability ------> budet and time
+2. Required Experience teams -----> decision making
+3. measuring progress ------> agile focuses iterative methode test develop
+
+---------------------------------------------------------
+
+DevOps methodology
+------------------------
+
+Dev + Ope
+
+fastest delivery
+Scalability ------> easy to scale up
+
+DevOps
+-----------
+1.source code management
+2.continuous Integration
+3.continuous monitoring
+4.continuous configuration (IAAC)
+5.continuous Deployment
+6.continuous Testing 
+7.continuous feedback
+
+source code management
+---------------------------
+version control
+Git & Github
+
+version control
+-----------------
+process of management system, Change records 
+
+Whatsapp ----> 2006 ---->  V1
+Whatsapp ----> 2006 ---->  V1
+Whatsapp ----> 2006 ---->  V1
+Whatsapp ----> 2022 ---->  V11
+Whatsapp ----> 2023 ---->  V12
+Whatsapp ----> 2024 ---->  V13 status proflie (Reuse)
+Whatsapp ----> 2024 ---->  V13.1
+
+GIT ---->  Version control
+Github ----> Remote Repo
+
+
+Types of version control system 
+------------------------
+1.local version control system 
+computer ------ DB
+centralized version control system 
+distributed version central system
+
+Git Componets
+-----------------
+1.Working Dir -------> local macine
+2Staging Area -------> Buffer area 
+3.Local Repo-------->  locally save
+4.Remote Repo------>  Github
+
+jerkins ----> CI/CD Tool
+continuous Integration ----> communition one tool to another also said pipeline 
+continuous Deployment
+
+jenkins --> 2005
+devOps  ---> 2006
+
+--------------------
+history
+
+2005 ---> hadson realname of the jenkins ---- sun  microsystem
+2006 ----> Oracle bought -----> jenkins
+
+father of devOps
+
+what is jenkins ?
+------------------------
+1. open source tool, continuous Integration
+2.jenkins *---- java installation main using jenkins
+3.platform Independence ----> linux , window macous , ubuntu
+4.Extensive plugins support ---> 1000+
+--------------------------------------------------
+jenkins installation
+
+java jdk version 21
+
+jenkins default port number ?
+8080
+
+queuing concept
+--------------------
+sequence the build 
+---- Upstream---  job that Trigger another job
+---- Downstream --- job that is Trigger by another job
+
+--------------------------------------
+build Trigger
+----------------
+1.Periodically trigger - crontab
+“At every minute on day-of-month 2 and on Friday in June.”
+ at 2025-06-02 00:00:00
+* * 2 6 5
+
+2.Remote trigger
+job/dev/
+http://localhost:8080//job/dev/job/devops/build?token=1432
+---------------------------------------------------------------------------
+User Management in jenkins
+
+security policy 
+
+plugins ?
+git -- sonarqubie ---maven
+dev-- test --- prod
+
+Role-based Authorization
+global roles -----> over all permission 
+item roles----->
+------------------------------------------------
+Regular expression
+-------------------------
+Developer_gama
+Developer_alpha
+Developer_beta
+tester_gama
+tester_alpha
+--------------------------------------------
+Terraform 
+IAC-----> infrastucture as a code
+1. automate the provisioning infra - using cloud
+2.using coding , scripts
+3.manage, 
+
+List of IAAC
+-------------------
+1.Terraform
+2.AWS cloud formation
+3. Azure Resources Manager
+4.Google cloud deployment manager
+5.Ansible, chef ,puppet, saltstack------------- this config manfunstucure useful interdesign
+-----------------------------------------
+1.statefile ------> scaleup down 
+2.imperative -----> specific command
+3.declarative-----------> terraform
+-----------------------------------
+consistency -----> same conf multiple environment developement,stagingarea ,production
+4.Automation ------------>
+5.version control ---------> track the changes
+6.collobrate ---------> Aws(vpc)
+7.Scalability -----> scalle up
+8.multi cloud  provisioning
+------------------------------------------
+Terraform ---IAC
+Hashicorp -----> HCL
+---------------------------
+terraform 
+
+setup Terraform in AWS
+----------------------------
+VPC 
+
+Requirement
+-----------------
+AWS Account
+IAM Roles
+EC2 instance --- ubuntu os
+--------------------------------------------------
+
+Prometheus and Grafana
+-----------------------------
+Monitoring purpose
+
+server ---> Health status down
+--- 24 hours  ---> 80%
+
+Mertics-----> server Running RAM CPU Network Storage
+performerce ----> RAM SSD harddisk 
+
+----------------------------------------------
+Prometheus
+---------------
+purpose : open source system, monitoring  & Alerting
+Data model : Time series data model 
+                      Timestramp : 2024-20-11
+                      value :  45%
+                       labels: server:server1,
+location,:database
+
+Pull  model:Collect the metrics peridically from the endpoint
+
+promql query : time series datamodel
+
+alterting : Integrated alerting system
+
+storage : own DB, Compressed format
+
+Exporters : third Party, Node Exporters,handwaremetrics,Mysql,
+windows exporters.
+
+scraper interval - 15s
+
+9090 local
+-----------------------------------------
+
+Grafana
+---------------------
+intergater  all cloud
+
+dashboard ---> create a dashboards 
+altert
+
+Intergration of prometheus and grafana
+-----------------------------------------------
+1.visualization
+2.security
+3.Ease to use 
+------------------------------------------------
+Installation of Prometheus and Grafana
+-----------------------------------------------
+OS : windows
+NSSM - Non sucking service manager 
+Application service base 
+
+Prometheus -9090
+windows expo-9182
+NSSM
+Grafana - 3000
+------------------------------------------------------
+
+Prometheus setup
+-----------------------

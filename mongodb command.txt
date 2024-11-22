@@ -1,0 +1,21 @@
+mongodb
+*use
+*db.name({})
+*db.findOne({})
+*db.find({})
+*db.insertOne({})
+*db.deleteOne({})
+*db.deleteMany({})
+*db.name({$And})
+*db.name({$gte})
+*db.name({$lte})
+*db.name({$or})
+*db.name({$where})
+*db.updateOne({})
+*db.updateMany({})
+*db.createOne({})
+*db.createMany({})
+crud using 
+*m
+
+
